@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="autor" content="René Quintanilla">
+		<meta name="description" content="Educación">
+		<meta name="viewport" content="width=devive-width, user-scalable=no">
+		<title>Hoja de Vida Digital</title>
+	</head>
+	<body>
+		<header>
+			<svg width="200" height="150" viewBox="0 0 200 150">
+				<image xlink:href="imagenes/Logo_RQ.svg" width="200px" height="150px"></image>
+			</svg>
+			<h1>Hoja de Vida</h1>
+			<nav>
+				<h2>Datos Personales</h2>
+				<h3>Nombres y Apellidos</h3>
+				<p><em>René Quintanilla</em></p>
+				<h3>Fecha y Lugar de Nacimiento</h3>
+				<p><em>Julio 5, 1973. Chinandega, Nicaragua</em></p>
+				<p>
+					<a href="index.html" title="Volver a Inicio">Inicio</a> |
+					<a href="educacion.html" title="Enlace a Educación">Educación</a> |
+					<a href="experiencia.html" title="Enlace a Experiencia">Experiencia</a>
+				</p>
+			</nav>
+			<h2>Educación</h2>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Año</th>
+						<th>Institución</th>
+						<th>Lugar</th>
+						<th>Culminó?</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1995</td>
+						<td>Universidad Nacional de Ingeniería</td>
+						<td>Nicaragua</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td>1997</td>
+						<td>Universidad Latina</td>
+						<td>Costa Rica</td>
+						<td>No</td>
+					</tr>
+					<tr>
+						<td>1998</td>
+						<td>Universidad de Ciencias Comerciales</td>
+						<td>Nicaragua</td>
+						<td>Sí</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>Agregar Estudios</h3>
+			<form name="Estudios" autocomplete="on">
+					<p>
+						<label for="año">Año:</label>
+						<select>
+							<option value="1">2016</option>
+							<option value="2">2015</option>
+							<option value="3">2014</option>
+						</select>
+					</p>
+					<p>
+						<label for="institucion">Institución:</label>
+						<input id="institucion" type="text" placeholder="Eje. Instituto Tecnológico" required>
+					</p>
+					<p>
+						<label for="lugar">Lugar:</label><br/>
+						<textarea name="lugar" rows="4" cols="40" required></textarea>
+					</p>
+					<p>
+						<input type="submit" name="Enviar"	value="Enviar">
+					</p>
+			</form>
+		</header>
+		<footer>
+			<h3>Información de Contacto</h3>
+			<p>
+				Reparto Las Palmas, BAC 75 varas Oeste. Managua.<br/>
+				<a href="mailto:rene@liftinggenerations.org">Mi Correo</a> | Teléfono:<a href="tel:84650393">84650393</a> |
+				<a href="https://www.facebook.com/renquintanilla" target="#_blank">Facebook</a>
+			</p>
+		</footer>
+	</body>
+</html>
